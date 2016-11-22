@@ -7,23 +7,50 @@
 //
 
 #import "ViewController.h"
+#import "Cropper.h"
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    
+    IBOutlet Cropper *_cropper;
+    
+    IBOutlet UIImageView *_result;
+    
+    IBOutlet UIButton *_cropperButton;
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    _cropper.layer.borderWidth = 1.0;
+    _cropper.layer.borderColor = [UIColor blueColor].CGColor;
+    [_cropper setup];
+    _cropper.image = [UIImage imageNamed:@"1"];
+    
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)clickCropperButton:(id)sender {
+    
+    if ([_cropperButton.currentTitle isEqualToString:@"Crop"]) {
+        [_cropper finishCropping];
+        _result.image = _cropper.croppedImage;
+        _cropper.hidden = YES;
+        [_cropperButton setTitle:@"Back" forState:UIControlStateNormal];
+        [_cropperButton setTitle:@"Back" forState:UIControlStateHighlighted];
+    }else {
+        [_cropper reset];
+        _cropper.hidden = NO;
+        [_cropperButton setTitle:@"Crop" forState:UIControlStateNormal];
+        [_cropperButton setTitle:@"Crop" forState:UIControlStateHighlighted];
+        _result.image = nil;
+    }
+    
 }
+
 
 
 @end

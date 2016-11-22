@@ -15,6 +15,8 @@
 		167ACB5F1DDED7B600898AAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167ACB5D1DDED7B600898AAF /* LaunchScreen.storyboard */; };
 		167ACB6A1DDED7B600898AAF /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 167ACB691DDED7B600898AAF /* ____Tests.m */; };
 		167ACB751DDED7B600898AAF /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 167ACB741DDED7B600898AAF /* ____UITests.m */; };
+		167ACB851DDED98400898AAF /* UIImage+Rotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 167ACB841DDED98400898AAF /* UIImage+Rotation.m */; };
+		167ACB881DDED99800898AAF /* Cropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 167ACB871DDED99800898AAF /* Cropper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		167ACB701DDED7B600898AAF /* 图像裁剪UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "图像裁剪UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		167ACB741DDED7B600898AAF /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		167ACB761DDED7B600898AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		167ACB831DDED98400898AAF /* UIImage+Rotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotation.h"; sourceTree = "<group>"; };
+		167ACB841DDED98400898AAF /* UIImage+Rotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotation.m"; sourceTree = "<group>"; };
+		167ACB861DDED99800898AAF /* Cropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cropper.h; sourceTree = "<group>"; };
+		167ACB871DDED99800898AAF /* Cropper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cropper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				167ACB5D1DDED7B600898AAF /* LaunchScreen.storyboard */,
 				167ACB601DDED7B600898AAF /* Info.plist */,
 				167ACB4F1DDED7B600898AAF /* Supporting Files */,
+				167ACB831DDED98400898AAF /* UIImage+Rotation.h */,
+				167ACB841DDED98400898AAF /* UIImage+Rotation.m */,
+				167ACB861DDED99800898AAF /* Cropper.h */,
+				167ACB871DDED99800898AAF /* Cropper.m */,
 			);
 			path = "图像裁剪";
 			sourceTree = "<group>";
@@ -274,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				167ACB571DDED7B600898AAF /* ViewController.m in Sources */,
+				167ACB881DDED99800898AAF /* Cropper.m in Sources */,
+				167ACB851DDED98400898AAF /* UIImage+Rotation.m in Sources */,
 				167ACB541DDED7B600898AAF /* AppDelegate.m in Sources */,
 				167ACB511DDED7B600898AAF /* main.m in Sources */,
 			);
